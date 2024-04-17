@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="CSS/Votrehoroscope.css">
+    <title>Astrologie Orion - Votre horoscope</title>
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+        <img src="Images/ORION LOGO.webp" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Accueil</a></li>
+                <li><a href="Index.html">À propos de nous</a></li>
+                <li><a href="Astrologie.html">Astrologie</a></li>
+                <li><a href="Horoscope.html">Horoscope</a></li>
+                <li><a href="VotreHoroscope.html">Votre horoscope</a></li>
+                <li><a href="#contact">Contactez-nous</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <section>
+        <h1>Si vous voulez savoir votre horoscope, veuillez remplir les informations ci-dessous.</h1>
+    </section>
+    <form name="Votrehoroscope" action="Uneaction" method="post">
+        <fieldset name="InfoPerso" id="InfoPerso">
+        <legend>Votre horoscope</legend><br>
+        <p><label for="Nom">Votre Nom de famille : </label>
+        <input type="text" name="Nom" id="Nom" size="40px"/></p>
+        <p><label for="Prénom">Votre Prénom :</label>
+        <input type="text" name="Prénom" id="Prénom" size="40px"/></p>
+        <p><label for="Datenaissance">Votre date de naissance : </label>
+        <input type="text" name="Datenaissance" id="Datenaissance" placeholder="JJ-MM-AAAA" size="40px"/></p>
+        <label for="Choixsigne" id="Choixsigne">Choissisez votre signe astrolique : </label>
+        <select>
+            <option value="Bélier">Bélier</option>
+            <option value="Taureau">Taureau</option>
+            <option value="Gémeaux">Gémeaux</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Lion">Lion</option>
+            <option value="Vierge">Vierge</option>
+            <option value="Balance">Balance</option>
+            <option value="Scorpion">Scorpion</option>
+            <option value="Sagittaire">Sagittaire</option>
+            <option value="Capricorne">Capricorne</option>
+            <option value="Verseau">Verseau</option>
+            <option value="Poissons">Poissons</option>
+        </select> 
+        </fieldset>
+    <div class="boutton">
+    <input type="submit" name="btnSoumettre" value="Soumettre" id="btn1" />
+    <input type="reset" name="btnEffacer" value="Effacer" id="btn2" />
+    </div>
+    </form>
+    <footer>
+        <div class="baspage">
+            <div class="footdroite">
+                    <h3 class="center-title">Liens utiles</h3>
+                    <ul>
+                    <li><a href="https://www.femininbio.com/spiritualite/actualites-et-nouveautes/signes-astrologiques-dates-elements-caracteres-74481">Les signes et dates du zodiaque</a></li>
+                    <li><a href="https://www.elle.fr/Astro/Horoscope/Caractere">Les caractéristiques des signes du zodiaque</a></li>
+                    <li><a href="https://emma.ca/horoscope/signe-astrologique#:~:text=Les%20signes%20zodiaques%20sont%20s%C3%A9par%C3%A9s,et%20avoir%20des%20temp%C3%A9raments%20fougueux.">Les traits associés aux différents signes</a></li>
+                    </ul>
+            </div>
+            <div class="contact-info">
+            <h3>Coordonnée de contact</h3>
+            <ul>
+                <li>Email : <a id="contact" href="mailto:proprietaire@info_orion.ca">propriétaire@info_orion.ca</a></li>
+            </ul>
+            </div>
+    <p><small><sup>&copy</sup>2023 Astrologie Orion, Tous droits réservés</small></p>
+    <p id="last-updated"><sub>Dernière date de mise à jour : 9 juillet 2023</p>
+        </div>
+</footer>
+</body>
+</html>
